@@ -18,9 +18,11 @@ If you want to contribute or need assistance, feel free to reach out to me on Di
 
 ### Known Issues
 Sometimes you may encounter bugs that prevent Minecraft from launching properly. 🐛 If this happens, feel free to let me know, or if you'd like, you can help me fix them!
+**Note**: You will need `g++` installed to compile C++ components.
 
-Discord: `@p1leon`
-Email: `leon@wincamp.pl`
-Github: `LenoYT`
-Youtube: `@Leno_YT`
-Minecraft: `Leno_YT` (xd)
+### Contact Information
+- Discord: `@p1leon`
+- Email: `leon@wincamp.pl`
+- Github: `LenoYT`
+- YouTube: `@Leno_YT`
+- Minecraft: `Leno_YT` (xd)
