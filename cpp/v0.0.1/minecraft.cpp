@@ -13,11 +13,11 @@ using namespace std;
 
 Block getBlock(string rawname) {
     for (auto b : ::blocks) { // Explicitly reference the global blocks vector
-        if (b.getRName() == rawname) {
-            return Block(b.getType(), b.getChar(), b.getRName(), b.isInteracting());
+        if (b.rawname == rawname) {
+            return Block(b.rawname, b.ch, b.type, b.interacting);
         }
     }
-    return Block(Block::BlockType::NULLB, "null", "null", false); // default block if not found
+    return Block( "null", "null", Block::BlockType::NULLB, false); // default block if not found
 }
 
 

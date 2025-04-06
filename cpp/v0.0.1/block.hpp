@@ -22,29 +22,22 @@ class Block {
                 void main(Block& b) {if (b.type == BlockType::INTERACTIVE) b.interacting=0;}
         };
 
-        Block(string rawname, string ch, BlockType type): rawname(rawname), ch(ch), type(type), interacting(false) {}
-        Block(BlockType t, string c, string rn, bool i): type(t), ch(c), rawname(rn), interacting(i) {}
+        Block(string rn, string c, BlockType t, bool i): type(t), ch(c), rawname(rn), interacting(i) {}
 
-        string getChar() {return ch;}
-        string getRName() {return rawname;}
-        BlockType getType() {return type;}
-        bool isInteracting() {return interacting;}
-        
-
-    private:
         BlockType type = BlockType::NORMAL;
         string ch;
         string rawname;
         bool interacting;
+        
 };
 
 vector<Block> blocks = {
-    Block("null", "", Block::BlockType::NULLB),
-    Block("stone", "S", Block::BlockType::NORMAL),
-    Block("dirt", "D", Block::BlockType::NORMAL),
-    Block("grass", "G", Block::BlockType::NORMAL),
-    Block("air", " ", Block::BlockType::AIR),
-    Block("water", "~", Block::BlockType::LIQUID),
-    Block("lava", "~", Block::BlockType::LIQUID),
-    Block("chest", "C", Block::BlockType::INTERACTIVE)
+    Block("null", "", Block::BlockType::NULLB, 0),
+    Block("stone", "S", Block::BlockType::NORMAL, 0),
+    Block("dirt", "D", Block::BlockType::NORMAL, 0),
+    Block("grass", "G", Block::BlockType::NORMAL, 0),
+    Block("air", " ", Block::BlockType::AIR, 0),
+    Block("water", "~", Block::BlockType::LIQUID, 0),
+    Block("lava", "~", Block::BlockType::LIQUID, 0),
+    Block("chest", "C", Block::BlockType::INTERACTIVE, 0)
 };
