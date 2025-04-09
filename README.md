@@ -25,4 +25,4 @@ Sometimes you may encounter bugs that prevent Minecraft from launching properly.
 - Email: `leon@wincamp.pl`
 - Github: `LenoYT`
 - YouTube: `@Leno_YT`
-- Minecraft: `Leno_YT` (xd)
+- Minecraft: `_epn` (xd)
